@@ -12,8 +12,8 @@ int main(int argc, char * argv[]) {
 	fin.open(pathone, ios::in);
 	fout.open(pathtwo, ios::out);
 	string line;
-	if (!fin.is_open() || !fout.is_open() ) {
-		cout << "Error opening input file: " << pathone<< endl;
+	if (!fin.is_open() && !fout.is_open() ) {
+		cout << "Error opening file" << endl;
 		return 1;
 	}
 	else {
